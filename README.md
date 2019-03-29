@@ -1,10 +1,8 @@
-# slack_data_counter
+# Slack Data Counter
 
-"type": "message",で
-"subtype": "message_changed",これはカウントすると重複する。
-"hidden": true,をカウントしない
+SlackのスタンダードプランではFull Member 1人あたり10GB、Slackでのファイル保存領域が得られるが、どれだけ使っているかサービスから確認できないので、Full Logからファイルの合計サイズを調べるツールを作成した
 
-"files": 要素のsize がbyte
-
-"is_external": false,
-"is_external": ture,は加算されない
+## Usage
+~~~
+python size_from_directory.py data_dir
+~~~
